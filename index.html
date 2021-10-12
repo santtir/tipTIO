@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFOLAVA!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagenes/mapa olavarria.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="head">
+        <h1 class="titulo">INFOLAVA!
+        </h1>
+        <img class="logo" src="imagenes/mapa olavarria.png" alt="mapaolav" width="150" height="110">
+    </div>
+    <div>
+        <nav>
+            <header>
+                <ul class="barranav">
+                    <li>Home</li>
+                    <li class="aaa"><a href="seccionpolitica.html">Politica</a></li>
+                    <li><a href="secciondeportes.html">Deportivas</a></li>
+                    <li><a href="seccioncovid.html">Covid</a></li>
+                    <li><a href="https://www.google.com/search?q=olavarria+clima&sxsrf=ALeKk03bIBTvdj641A-bYPYAkOzxWrDVjw%3A1618058546955&ei=Mp1xYIjkOaCu5OUPi6GMsAE&oq=olavarria+c&gs_lcp=Cgdnd3Mtd2l6EAEYADIJCCMQJxBGEIACMgIIADIFCAAQyQMyAggAMgIIADICCAAyAgguMgIIADICCAAyAggAOgcIIxCwAxAnOgcILhCwAxAnOgcIABBHELADOgoILhCwAxDIAxBDOgQIIxAnOgcIABCHAhAUOggIABCxAxCDAToECAAQQzoICAAQxwEQrwFKBQg4EgExUNsFWI8HYOIMaAFwAngAgAGSAYgBtAKSAQMyLjGYAQCgAQGqAQdnd3Mtd2l6yAENwAEB&sclient=gws-wiz"
+                            target="_blank">Clima</a></li>
+                </ul>
+            </header>
+        </nav>
+    </div>
+    <div class="noticiashome">
+        <div class="articulo">
+            <a href="noticiapolitica.html">
+                <h1 class="tituloshome">Para Axel Kicillof, el fallo que habilitó las clases presenciales <br> en la
+                    Ciudad
+                    “es repugnante”.</h1>
+            </a>
+            <p class="epigrafe">El gobernador bonaerense avaló las nuevas restricciones por el coronavirus.</p>
+            <img src="imagenes/el-gobernador-respaldo-las-medidas___GbT2uInIs_1256x620__1.webp"
+                alt="El gobernador Kicillof" width="600" height="400">
+
+
+        </div>
+
+        <div class="articulo">
+            <a href="noticiadep.html">
+                <h1 class="tituloshome">Cuatro puntos clave para entender la Superliga Europea y el impacto
+                    que puede causar en Lionel Messi y la Selección Argentina.</h1>
+            </a>
+            <p class="epigrafe">Serán 20 clubes que se enfrentarán entresemana. Repartirá mucho más dinero que la
+                UEFA. Quién está detrás de la inversión. Los detalles. </p>
+            <img src="imagenes/messi.jpg" alt="Lionel Messi" width="600" height="400">
+
+        </div>
+
+        <div class="articulo">
+            <a href="covid.html">
+                <h1 class="tituloshome">Vacunación Covid 19 en Argentina: cuántas dosis se aplicaron al 17 de abril
+                </h1>
+            </a>
+            <p class="epigrafe">Las provincias con mayor cantidad de dosis aplicadas son Buenos Aires <br> con
+                2.404.048, CABA con 623.911 y Córdoba con 519.656.</p>
+            <img src="imagenes/vacuna.jpeg" alt="quimico con la vacuna" width="600" height="400">
+
+
+        </div>
+
+        <div class="articulo">
+            <a href="noticiapolitica2.html">
+                <h1 class="tituloshome">En la Cumbre Climática, Alberto Fernández volvió a hablar de la deuda e
+                    hizo un pedido a los líderes mundiales</h1>
+            </a>
+            <p class="epigrafe">El jefe de Estado afirmó que la Argentina “ha puesto la acción climática y ambiental en
+                el centro de sus convicciones”.
+            </p>
+            <img src="imagenes/alberto.jpg" alt="Presidente de la Argentina" width="600" height="400">
+
+        </div>
+
+        <div class="articulo">
+            <a href="noticiadep2.html">
+                <h1 class="tituloshome">La revancha de Campazzo: cuatro triples en una ajustada victoria de Denver
+                </h1>
+            </a>
+            <p class="epigrafe">Con un gran aporte del base argentino, quien sumó 12 puntos en 27 minutos, los Nuggets
+                vencieron 106-105 a Portland.</p>
+            <img src="imagenes/campazzo.jpg" alt="Facundo Campazzo" width="600" height="400">
+
+        </div>
+    </div>
+    <div class="captcha">
+        <h3>¿Quiere recibir informacion adicional?</h3>
+        <form>
+            <input id="nombre" type="text" placeholder="Nombre Completo:">
+            <input id="correo" type="email" placeholder="Correo Electronico:">
+            <p>Para poder continuar complete el siguiente captcha: </p>
+
+            <label for="captcha">Ingrese el resultado de 4x4: </label><input id="form-captcha" type="number" min="0"
+                max="20">
+            <button type="button" id="btn-captcha">Enviar</button>
+            <div id="respuesta"></div>
+
+        </form>
+    </div>
+
+    <footer>
+        <div class="piedepag">
+            <h4>INFOLAVA,2021</h4>
+        </div>
+    </footer>
+
+    <script src="js/captcha.js"></script>
+</body>
+
+</html>
