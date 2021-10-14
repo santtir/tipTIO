@@ -1,0 +1,213 @@
+.titulo {
+    color: white;
+    font-size: 50px;
+    grid-area: titulo;
+    margin: 0;
+    width: fit-content;
+    height: auto;
+}
+
+.head {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "titulo logo";
+    background-color: black;
+    align-items: center;
+}
+footer{
+    text-align: end;
+    font-style: oblique;
+}
+a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    grid-area: logo;
+}
+
+.tituloshome {
+    color: white;
+    background-color: black;
+    margin-top: 8vh;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.encabezado h1 {
+    color: white;
+    background-color: black;
+}
+
+.epigrafe {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tit-seccion {
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    width: fit-content;
+    text-align: center;
+}
+
+.resaltado {
+    font-weight: bold;
+    font-style: italic;
+    background-color: rgb(235, 88, 88)
+}
+
+.tabla {
+    display: flex;
+    justify-content: center;
+}
+
+table, td, th {
+    border: 1px solid black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+.captcha {
+    color: white;
+    background-color: black;
+    width: fit-content;
+}
+
+.btn-menu {
+    color: white;
+    font-size: 3.5vh;
+}
+
+.btn-menu a {
+    text-decoration: none;
+}
+
+ul.barranav {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    flex-direction: column;
+}
+
+ul.barranav.show {
+    display: flex;
+}
+
+.barranav {
+    font-style: normal;
+    list-style: none;
+    background-color: rgb(51, 50, 50);
+    color: white;
+    font-size: 3vh;
+}
+
+.barranav li :hover {
+    background-color: grey;
+}
+
+.barranav li a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: #bdbfc29d;
+}
+
+/*pantalla pc*/
+
+@media(min-width: 600px) {
+    .titulo {
+        color: white;
+        grid-area: titulo;
+        margin: 0;
+        width: fit-content;
+        height: auto;
+        align-items: center;
+        text-align: right;
+    }
+    .logo {
+        grid-area: logo;
+    }
+    .head {
+        display: grid;
+        grid-template-columns: 2.5fr 1fr 3fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: ". titulo logo";
+        background-color: black;
+    }
+    .btn-menu {
+        display: none;
+    }
+    ul.barranav {
+        display: flex;
+        font-style: normal;
+        list-style: none;
+        justify-content: space-around;
+        background-color: black;
+        color: white;
+        font-size: 27px;
+        flex-direction: row;
+    }
+    .barranav li :hover {
+        background-color: rgba(138, 138, 138, 0.637);
+    }
+    .barranav li a {
+        text-decoration: none;
+        color: white;
+    }
+    a {
+        text-decoration: none;
+    }
+    .tituloshome {
+        color: white;
+        background-color: black;
+        width: fit-content;
+        height: auto;
+        text-decoration: underline white 0.5px;
+        margin-top: 3vh;
+    }
+    .noticiashome, .noticias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .articulo {
+        display: flex;
+        align-self: center;
+        width: 700px;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px 0px 40px 0px;
+        border: 2px ridge black;
+        padding: 0px 10px 20px 10px;
+    }
+    input::-webkit-outer-spin-button, /* quitar las flechas del input numero*/
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    .encabezado img {
+        width: 50%;
+        height: 50%;
+        margin-left: 25%;
+    }
+    .cuerponoticia img {
+        width: 50%;
+        height: 50%;
+        margin-left: 25%;
+    }
+}
